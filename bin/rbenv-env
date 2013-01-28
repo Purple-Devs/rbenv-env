@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#
+# Summary: Shows relevant environment variables.
+#
+# Usage: rbenv env
+#
+# Shows PATH and any variables that start with GEM or RBENV
+#
+
+set -e
+[ -n "$RBENV_DEBUG" ] && set -x
+
+export RBENV_VERSION="$(rbenv-version-name)"
+
+for script in $(rbenv-hooks exec); do
+  source "$script"
+done
+
+RBENV_COMMAND="ruby"
+
+RBENV_COMMAND_PATH="$(rbenv-which "$RBENV_COMMAND")"
+RBENV_BIN_PATH="${RBENV_COMMAND_PATH%/*}"
+
+if [ "$RBENV_VERSION" != "system" ]; then
+  export PATH="${RBENV_BIN_PATH}:${PATH}"
+fi
+
+/usr/bin/env | egrep '^GEM|^RBENV|^PATH='
