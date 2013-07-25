@@ -4,7 +4,7 @@
 #
 # Usage: rbenv env
 #
-# Shows PATH and any variables that start with GEM or RBENV
+# Shows PATH and any variables that start with GEM, RAILS, RBENV or RUBY
 #
 
 set -e
@@ -25,4 +25,4 @@ if [ "$RBENV_VERSION" != "system" ]; then
   export PATH="${RBENV_BIN_PATH}:${PATH}"
 fi
 
-/usr/bin/env | egrep '^GEM|^RBENV|^PATH='
+/usr/bin/env | egrep '^GEM|^RBENV|^RUBY|^RAILS|^PATH='
