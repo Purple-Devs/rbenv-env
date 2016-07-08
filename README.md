@@ -16,6 +16,10 @@ To install rbenv-env, clone this repository into your ~/.rbenv/plugins directory
     $ cd ~/.rbenv/plugins
     $ git clone https://github.com/ianheggie/rbenv-env.git 
 
+## Tests
+
+* [Travis-CI](https://travis-ci.org/ianheggie/rbenv-env) for the Continuous integration test results
+
 ## License
 
 Copyright (c) 2013 Ian Heggie - Released under the same terms as [rbenv's MIT-License](https://github.com/sstephenson/rbenv#license)
