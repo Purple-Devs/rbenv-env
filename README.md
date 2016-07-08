@@ -1,4 +1,9 @@
+RBENV-ENV
+=========
+
 This [rbenv](http://rbenv.org/) plugin adds the `rbenv env` command that shows relevant environment variables.
+
+[![Build Status of master](https://api.travis-ci.org/ianheggie/rbenv-env.svg?branch=master)](https://travis-ci.org/ianheggie/rbenv-env)
 
 ## Usage
 
