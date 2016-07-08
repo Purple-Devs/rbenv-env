@@ -29,3 +29,18 @@ To install rbenv-env, clone this repository into your ~/.rbenv/plugins directory
 
 Copyright (c) 2013 Ian Heggie - Released under the same terms as [rbenv's MIT-License](https://github.com/sstephenson/rbenv#license)
 
+## Note on Patches/Pull Requests
+
+*Since I no longer using rbenv, I am happy to include pull requests, but I am not actively developing this plugin. If you are interested in taking on this project, either completely or in partnership, please contact me.*
+
+* Fork the project.
+* Make your feature addition or bug fix, **with tests**
+* Commit
+* Send me a pull request. Bonus points for topic branches.
+
+## Contributors
+
+Thanks go to:
+
+* Various people who have given feedback and suggestions via the issues list and pull requests
+
