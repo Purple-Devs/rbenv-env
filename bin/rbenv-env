@@ -25,4 +25,4 @@ if [ "$RBENV_VERSION" != "system" ]; then
   export PATH="${RBENV_BIN_PATH}:${PATH}"
 fi
 
-/usr/bin/env | egrep '^GEM|^RBENV|^RUBY|^RAILS|^PATH='
+/usr/bin/env | egrep '^GEM|^RBENV|^RUBY|^RAILS|^PATH=|^NODE_|^NODENV_|^NPM_'
