@@ -17,9 +17,7 @@ To see what environment variables rbenv / plugins pass to commands (Shows PATH a
 
 To install rbenv-env, clone this repository into your ~/.rbenv/plugins directory. (You'll need a recent version of rbenv that supports plugin bundles.)
 
-    $ mkdir -p ~/.rbenv/plugins
-    $ cd ~/.rbenv/plugins
-    $ git clone https://github.com/ianheggie/rbenv-env.git 
+    $ git clone https://github.com/ianheggie/rbenv-env.git "$(rbenv root)/plugins/rbenv-env"
 
 ## Tests
 
