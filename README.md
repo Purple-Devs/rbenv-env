@@ -11,7 +11,8 @@ Run the command
 
     $ rbenv env
 
-To see what environment variables rbenv / plugins pass to commands (Shows PATH and any variables that start with GEM, RAILS, RBENV or RUBY)
+To see what environment variables rbenv / plugins pass to commands (Shows PATH and any variables that start with GEM, RAILS, RBENV or RUBY).
+Also shows environment variables that start with NODE_, NODENV_ or NPM for use with rbenv based node.js switching
 
 ## Installation
 
