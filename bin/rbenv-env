@@ -16,12 +16,10 @@ for script in $(rbenv-hooks exec); do
   source "$script"
 done
 
-RBENV_COMMAND="ruby"
-
-RBENV_COMMAND_PATH="$(rbenv-which "$RBENV_COMMAND")"
-RBENV_BIN_PATH="${RBENV_COMMAND_PATH%/*}"
-
 if [ "$RBENV_VERSION" != "system" ]; then
+  RBENV_COMMAND_PATH="$(rbenv-which ruby)"
+  RBENV_BIN_PATH="${RBENV_COMMAND_PATH%/*}"
+
   export PATH="${RBENV_BIN_PATH}:${PATH}"
 fi
 
